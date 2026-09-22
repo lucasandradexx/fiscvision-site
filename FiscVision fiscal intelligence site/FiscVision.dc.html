@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: #f4f7f9; color: #0d2135; font-family: "Plus Jakarta Sans", Helvetica, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #0f7f92; text-decoration: none; }
+  a:hover { color: #083a64; }
+  ::placeholder { color: #93a4b3; }
+</style>
+</helmet>
+<div style="width:100%; background:#f4f7f9;">
+
+  <header style="position:sticky; top:0; z-index:20; background:rgba(255,255,255,0.92); backdrop-filter:blur(10px); border-bottom:1px solid #e2e9ee;">
+    <div style="max-width:1140px; margin:0 auto; padding:14px 24px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <img src="uploads/Logo%20FiscVision.svg" alt="FiscVision" style="height:120px; width:auto; display:block;" />
+      </div>
+      <nav style="display:flex; align-items:center; gap:28px; font-size:14px; font-weight:600; color:#48606f;">
+        <a href="#sobre" style="color:#48606f;">O que é</a>
+        <a href="#diagnostico" style="color:#48606f;">Diagnóstico</a>
+        <a href="#relatorio" style="color:#48606f;">Relatório</a>
+        <span style="font-size:12px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#9aacba; border-left:1px solid #e2e9ee; padding-left:28px;">MN Software</span>
+      </nav>
+    </div>
+  </header>
+
+  <section style="background:linear-gradient(160deg,#083a64 0%,#0b2d4d 55%,#07233d 100%); color:#ffffff;">
+    <div style="max-width:1140px; margin:0 auto; padding:80px 24px 88px; display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,0.85fr); gap:56px; align-items:center;">
+      <div>
+        <div style="display:inline-flex; align-items:center; gap:8px; padding:6px 14px; border-radius:999px; background:rgba(17,185,214,0.14); border:1px solid rgba(17,185,214,0.35); font-size:12px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#5fd8ec;">Agente de inteligência fiscal</div>
+        <h1 style="margin:22px 0 0; font-size:52px; line-height:1.06; font-weight:800; letter-spacing:-0.025em; text-wrap:pretty;">Dados fiscais viram diagnóstico, alerta e plano de ação.</h1>
+        <p style="margin:22px 0 0; font-size:18px; line-height:1.6; color:#b9cddd; max-width:34em; text-wrap:pretty;">O FiscVision consulta o Zen Fiscal, organiza documentos e obrigações e entrega ao contador uma leitura clara do que está regular, do que exige atenção e do que é crítico — mês a mês.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:14px; margin-top:32px;">
+          <a href="#diagnostico" style="display:inline-flex; align-items:center; gap:10px; padding:15px 26px; border-radius:10px; background:#11b9d6; color:#062639; font-weight:700; font-size:15px;">Gerar diagnóstico</a>
+          <a href="#relatorio" style="display:inline-flex; align-items:center; gap:10px; padding:15px 26px; border-radius:10px; border:1px solid rgba(255,255,255,0.22); color:#e6f1f8; font-weight:600; font-size:15px;">Ver relatório de exemplo</a>
+        </div>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,0.12); border-radius:16px; background:rgba(255,255,255,0.05); padding:24px;">
+        <div style="font-size:11px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#7fa5c0;">Resumo dos últimos 6 meses</div>
+        <div style="display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:18px;">
+          <div style="border-radius:12px; background:rgba(81,172,84,0.14); border:1px solid rgba(81,172,84,0.34); padding:16px;">
+            <div style="font-size:30px; font-weight:800; color:#7fd982;">38</div>
+            <div style="font-size:13px; color:#c3dccd; margin-top:2px;">Itens regulares</div>
+          </div>
+          <div style="border-radius:12px; background:rgba(234,179,8,0.13); border:1px solid rgba(234,179,8,0.32); padding:16px;">
+            <div style="font-size:30px; font-weight:800; color:#f2c94c;">11</div>
+            <div style="font-size:13px; color:#e2d6b5; margin-top:2px;">Pontos de atenção</div>
+          </div>
+          <div style="border-radius:12px; background:rgba(224,72,61,0.13); border:1px solid rgba(224,72,61,0.32); padding:16px;">
+            <div style="font-size:30px; font-weight:800; color:#ff8f84;">4</div>
+            <div style="font-size:13px; color:#e8cbc8; margin-top:2px;">Críticos</div>
+          </div>
+          <div style="border-radius:12px; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.16); padding:16px;">
+            <div style="font-size:30px; font-weight:800; color:#cbd9e4;">6</div>
+            <div style="font-size:13px; color:#a9bccb; margin-top:2px;">Não analisados</div>
+          </div>
+        </div>
+        <div style="margin-top:18px; font-family:'IBM Plex Mono', monospace; font-size:12px; color:#7fa5c0;">fonte: Zen Fiscal · atualizado há 2h</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" style="max-width:1140px; margin:0 auto; padding:86px 24px 12px;">
+    <div style="max-width:44em;">
+      <div style="font-size:12px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#0f7f92;">O que é o FiscVision</div>
+      <h2 style="margin:14px 0 0; font-size:36px; line-height:1.15; font-weight:800; letter-spacing:-0.02em; color:#0d2135; text-wrap:pretty;">Um agente de IA que faz a leitura fiscal antes de você abrir o primeiro arquivo.</h2>
+      <p style="margin:16px 0 0; font-size:17px; line-height:1.65; color:#4c6376; text-wrap:pretty;">Ele não substitui o contador. Ele elimina a parte lenta: coletar, conferir, cruzar e resumir. A decisão continua sendo sua — só que agora com o cenário inteiro na mesa.</p>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:18px; margin-top:44px;">
+      <div style="background:#ffffff; border:1px solid #e2e9ee; border-radius:14px; padding:26px;">
+        <div style="width:34px; height:34px; border-radius:9px; background:#083a64;"></div>
+        <div style="margin-top:18px; font-size:12px; font-family:'IBM Plex Mono', monospace; color:#9aacba;">01</div>
+        <h3 style="margin:6px 0 8px; font-size:17px; font-weight:700; color:#0d2135;">Consulta o Zen Fiscal</h3>
+        <p style="margin:0; font-size:14.5px; line-height:1.6; color:#5b7183;">Busca automaticamente notas, guias, escriturações e obrigações do CNPJ informado.</p>
+      </div>
+      <div style="background:#ffffff; border:1px solid #e2e9ee; border-radius:14px; padding:26px;">
+        <div style="width:34px; height:34px; border-radius:9px; background:#11b9d6;"></div>
+        <div style="margin-top:18px; font-size:12px; font-family:'IBM Plex Mono', monospace; color:#9aacba;">02</div>
+        <h3 style="margin:6px 0 8px; font-size:17px; font-weight:700; color:#0d2135;">Organiza as informações</h3>
+        <p style="margin:0; font-size:14.5px; line-height:1.6; color:#5b7183;">Normaliza períodos, agrupa por competência e identifica o que está faltando na base.</p>
+      </div>
+      <div style="background:#ffffff; border:1px solid #e2e9ee; border-radius:14px; padding:26px;">
+        <div style="width:34px; height:34px; border-radius:9px; background:#0f7f92;"></div>
+        <div style="margin-top:18px; font-size:12px; font-family:'IBM Plex Mono', monospace; color:#9aacba;">03</div>
+        <h3 style="margin:6px 0 8px; font-size:17px; font-weight:700; color:#0d2135;">Analisa documentos e obrigações</h3>
+        <p style="margin:0; font-size:14.5px; line-height:1.6; color:#5b7183;">Cruza divergências entre apurado, declarado e recolhido, e sinaliza prazos vencidos.</p>
+      </div>
+      <div style="background:#ffffff; border:1px solid #e2e9ee; border-radius:14px; padding:26px;">
+        <div style="width:34px; height:34px; border-radius:9px; background:#51ac54;"></div>
+        <div style="margin-top:18px; font-size:12px; font-family:'IBM Plex Mono', monospace; color:#9aacba;">04</div>
+        <h3 style="margin:6px 0 8px; font-size:17px; font-weight:700; color:#0d2135;">Entrega diagnóstico e plano</h3>
+        <p style="margin:0; font-size:14.5px; line-height:1.6; color:#5b7183;">Relatório por mês com semáforo, alertas priorizados e próximos passos sugeridos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="diagnostico" style="max-width:1140px; margin:0 auto; padding:70px 24px 0;">
+    <div style="background:#0d2135; border-radius:20px; padding:48px 44px; color:#ffffff;">
+      <div style="display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.05fr); gap:44px; align-items:center;">
+        <div>
+          <h2 style="margin:0; font-size:30px; line-height:1.18; font-weight:800; letter-spacing:-0.02em; text-wrap:pretty;">Digite o CNPJ do cliente e receba o diagnóstico.</h2>
+          <p style="margin:14px 0 0; font-size:16px; line-height:1.6; color:#a9c2d4;">A análise cobre os últimos 6 meses de competência e leva, em média, 40 segundos.</p>
+        </div>
+        <div>
+          <label for="cnpj" style="display:block; font-size:12px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#7fa5c0; margin-bottom:10px;">CNPJ do cliente</label>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <input id="cnpj" type="text" inputMode="numeric" placeholder="00.000.000/0000-00" value="{{ cnpj }}" onChange="{{ onCnpj }}" style="flex:1 1 240px; min-width:0; padding:16px 18px; border-radius:11px; border:1px solid rgba(255,255,255,0.18); background:rgba(255,255,255,0.06); color:#ffffff; font-family:'IBM Plex Mono', monospace; font-size:16px; letter-spacing:0.03em; outline:none;" style-focus="border-color:#11b9d6; background:rgba(17,185,214,0.1);" />
+            <button type="button" onClick="{{ onGerar }}" style="padding:16px 26px; border-radius:11px; border:none; background:#11b9d6; color:#062639; font-family:'Plus Jakarta Sans', sans-serif; font-weight:700; font-size:15px; cursor:pointer;" style-hover="background:#38ccE4;">{{ botaoLabel }}</button>
+          </div>
+          <div style="margin-top:12px; font-size:13px; color:#8fb0c8; min-height:20px;">{{ statusMsg }}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="relatorio" style="max-width:1140px; margin:0 auto; padding:72px 24px 96px;">
+    <div style="display:flex; flex-wrap:wrap; gap:20px; align-items:flex-end; justify-content:space-between;">
+      <div>
+        <div style="font-size:12px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#0f7f92;">Amostra de relatório</div>
+        <h2 style="margin:12px 0 6px; font-size:32px; font-weight:800; letter-spacing:-0.02em; color:#0d2135;">{{ nomeCliente }}</h2>
+        <div style="font-family:'IBM Plex Mono', monospace; font-size:13px; color:#7c8fa0;">CNPJ {{ cnpjExibido }} · competências de abril a setembro</div>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:18px; font-size:13px; color:#4c6376;">
+        <span style="display:flex; align-items:center; gap:8px;"><span style="width:10px; height:10px; border-radius:50%; background:#51ac54; display:inline-block;"></span>Regular</span>
+        <span style="display:flex; align-items:center; gap:8px;"><span style="width:10px; height:10px; border-radius:50%; background:#eab308; display:inline-block;"></span>Atenção</span>
+        <span style="display:flex; align-items:center; gap:8px;"><span style="width:10px; height:10px; border-radius:50%; background:#e0483d; display:inline-block;"></span>Crítico</span>
+        <span style="display:flex; align-items:center; gap:8px;"><span style="width:10px; height:10px; border-radius:50%; background:#c3ced7; display:inline-block;"></span>Não analisado</span>
+      </div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px; margin-top:30px;">
+      <sc-for list="{{ meses }}" as="m" hint-placeholder-count="6">
+        <div style="background:#ffffff; border:1px solid #e2e9ee; border-radius:14px; padding:22px; display:flex; flex-direction:column; gap:16px;">
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+            <div>
+              <div style="font-size:17px; font-weight:700; color:#0d2135;">{{ m.mes }}</div>
+              <div style="font-family:'IBM Plex Mono', monospace; font-size:12px; color:#9aacba; margin-top:2px;">{{ m.competencia }}</div>
+            </div>
+            <div style="display:flex; align-items:center; gap:8px; padding:6px 12px; border-radius:999px; background:{{ m.statusBg }}; color:{{ m.statusFg }}; font-size:12px; font-weight:700;">
+              <span style="width:8px; height:8px; border-radius:50%; background:{{ m.statusFg }}; display:inline-block;"></span>{{ m.statusLabel }}
+            </div>
+          </div>
+          <div style="display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:8px;">
+            <div style="border-radius:9px; background:#f1f8f1; padding:10px 8px; text-align:center;">
+              <div style="font-size:19px; font-weight:800; color:#3f8f43;">{{ m.regular }}</div>
+              <div style="font-size:10.5px; font-weight:600; color:#7ba17d; margin-top:2px;">Regular</div>
+            </div>
+            <div style="border-radius:9px; background:#fdf6e3; padding:10px 8px; text-align:center;">
+              <div style="font-size:19px; font-weight:800; color:#a9820c;">{{ m.atencao }}</div>
+              <div style="font-size:10.5px; font-weight:600; color:#b8a068; margin-top:2px;">Atenção</div>
+            </div>
+            <div style="border-radius:9px; background:#fdefed; padding:10px 8px; text-align:center;">
+              <div style="font-size:19px; font-weight:800; color:#c23b30;">{{ m.critico }}</div>
+              <div style="font-size:10.5px; font-weight:600; color:#c48a84; margin-top:2px;">Crítico</div>
+            </div>
+            <div style="border-radius:9px; background:#f2f5f7; padding:10px 8px; text-align:center;">
+              <div style="font-size:19px; font-weight:800; color:#7c8fa0;">{{ m.naoAnalisado }}</div>
+              <div style="font-size:10.5px; font-weight:600; color:#a3b1bc; margin-top:2px;">N/A</div>
+            </div>
+          </div>
+          <div style="font-size:13.5px; line-height:1.55; color:#5b7183; border-top:1px solid #eef3f6; padding-top:14px;">{{ m.nota }}</div>
+        </div>
+      </sc-for>
+    </div>
+
+    <sc-if value="{{ mostrarTabela }}" hint-placeholder-val="{{ true }}">
+      <div style="margin-top:34px; background:#ffffff; border:1px solid #e2e9ee; border-radius:16px; overflow:hidden;">
+        <div style="padding:22px 26px; border-bottom:1px solid #eef3f6; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;">
+          <h3 style="margin:0; font-size:17px; font-weight:700; color:#0d2135;">Plano de ação priorizado</h3>
+          <span style="font-size:13px; color:#7c8fa0;">8 itens · 3 com prazo nos próximos 15 dias</span>
+        </div>
+        <div style="display:grid; grid-template-columns:minmax(0,1.6fr) minmax(0,0.7fr) minmax(0,0.6fr) minmax(0,0.6fr); gap:16px; padding:14px 26px; background:#f7fafb; font-size:11.5px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#8497a5;">
+          <div>Ocorrência</div><div>Competência</div><div>Status</div><div>Prazo</div>
+        </div>
+        <sc-for list="{{ acoes }}" as="a" hint-placeholder-count="4">
+          <div style="display:grid; grid-template-columns:minmax(0,1.6fr) minmax(0,0.7fr) minmax(0,0.6fr) minmax(0,0.6fr); gap:16px; padding:18px 26px; border-top:1px solid #f0f4f7; align-items:center; font-size:14.5px; color:#3d5568;">
+            <div style="font-weight:600; color:#0d2135;">{{ a.titulo }}</div>
+            <div style="font-family:'IBM Plex Mono', monospace; font-size:13px; color:#6d8193;">{{ a.competencia }}</div>
+            <div><span style="display:inline-flex; align-items:center; gap:7px; padding:5px 11px; border-radius:999px; background:{{ a.statusBg }}; color:{{ a.statusFg }}; font-size:12px; font-weight:700;"><span style="width:7px; height:7px; border-radius:50%; background:{{ a.statusFg }}; display:inline-block;"></span>{{ a.statusLabel }}</span></div>
+            <div style="font-size:13.5px; color:#6d8193;">{{ a.prazo }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </sc-if>
+  </section>
+
+  <footer style="background:#083a64; color:#a9c2d4;">
+    <div style="max-width:1140px; margin:0 auto; padding:34px 24px; display:flex; flex-wrap:wrap; gap:16px; align-items:center; justify-content:space-between; font-size:13.5px;">
+      <div style="display:flex; align-items:center; gap:12px; color:#dbe8f2; font-weight:600;">FiscVision · MN Software</div>
+      <div>O FiscVision apoia a análise do contador. A responsabilidade técnica permanece do profissional.</div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;nomeCliente&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Comercial Aurora Distribuidora Ltda.&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Relatório&quot;},&quot;mesesVisiveis&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:6,&quot;min&quot;:3,&quot;max&quot;:6,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Relatório&quot;},&quot;mostrarPlano&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Relatório&quot;}}">
+const SEM = {
+  regular: { label: "Regular", fg: "#3f8f43", bg: "#eaf5ea" },
+  atencao: { label: "Atenção", fg: "#a9820c", bg: "#fdf4e0" },
+  critico: { label: "Crítico", fg: "#c23b30", bg: "#fdecea" },
+  na: { label: "Não analisado", fg: "#7c8fa0", bg: "#f1f5f7" }
+};
+
+class Component extends DCLogic {
+  state = { cnpj: "", fase: "idle" };
+
+  formatar(v) {
+    const d = (v || "").replace(/\D/g, "").slice(0, 14);
+    let o = d;
+    if (d.length > 2) o = d.slice(0, 2) + "." + d.slice(2);
+    if (d.length > 5) o = d.slice(0, 2) + "." + d.slice(2, 5) + "." + d.slice(5);
+    if (d.length > 8) o = d.slice(0, 2) + "." + d.slice(2, 5) + "." + d.slice(5, 8) + "/" + d.slice(8);
+    if (d.length > 12) o = d.slice(0, 2) + "." + d.slice(2, 5) + "." + d.slice(5, 8) + "/" + d.slice(8, 12) + "-" + d.slice(12);
+    return o;
+  }
+
+  componentWillUnmount() { clearTimeout(this._t); }
+
+  gerar = () => {
+    if (this.state.fase === "loading") return;
+    this.setState({ fase: "loading" });
+    clearTimeout(this._t);
+    this._t = setTimeout(() => this.setState({ fase: "done" }), 1600);
+  };
+
+  renderVals() {
+    const { cnpj, fase } = this.state;
+    const meses = [
+      { mes: "Setembro", competencia: "09/2026", st: "atencao", regular: 6, atencao: 3, critico: 0, naoAnalisado: 2, nota: "EFD Contribuições ainda não transmitida; 2 notas sem escrituração." },
+      { mes: "Agosto", competencia: "08/2026", st: "regular", regular: 9, atencao: 1, critico: 0, naoAnalisado: 1, nota: "Apuração conciliada. Divergência de R$ 412 em crédito de PIS." },
+      { mes: "Julho", competencia: "07/2026", st: "critico", regular: 5, atencao: 2, critico: 3, naoAnalisado: 1, nota: "DAS em atraso e ICMS-ST recolhido a menor. Priorizar regularização." },
+      { mes: "Junho", competencia: "06/2026", st: "regular", regular: 10, atencao: 1, critico: 0, naoAnalisado: 0, nota: "Obrigações acessórias entregues no prazo. Nenhum alerta relevante." },
+      { mes: "Maio", competencia: "05/2026", st: "atencao", regular: 7, atencao: 3, critico: 1, naoAnalisado: 1, nota: "Notas canceladas fora do prazo e CFOP divergente em 4 documentos." },
+      { mes: "Abril", competencia: "04/2026", st: "na", regular: 1, atencao: 1, critico: 0, naoAnalisado: 1, nota: "Base do Zen Fiscal incompleta para o período. Reprocessamento sugerido." }
+    ].slice(0, this.props.mesesVisiveis ?? 6).map(m => ({
+      ...m,
+      statusLabel: SEM[m.st].label, statusFg: SEM[m.st].fg, statusBg: SEM[m.st].bg
+    }));
+
+    const acoes = [
+      { titulo: "DAS de julho em atraso — multa e juros acumulando", competencia: "07/2026", st: "critico", prazo: "Imediato" },
+      { titulo: "ICMS-ST recolhido a menor em 3 operações", competencia: "07/2026", st: "critico", prazo: "5 dias" },
+      { titulo: "EFD Contribuições pendente de transmissão", competencia: "09/2026", st: "atencao", prazo: "15 dias" },
+      { titulo: "CFOP divergente em 4 notas de entrada", competencia: "05/2026", st: "atencao", prazo: "30 dias" },
+      { titulo: "Reprocessar base do Zen Fiscal do período", competencia: "04/2026", st: "na", prazo: "A definir" }
+    ].map(a => ({ ...a, statusLabel: SEM[a.st].label, statusFg: SEM[a.st].fg, statusBg: SEM[a.st].bg }));
+
+    return {
+      meses, acoes,
+      cnpj,
+      mostrarTabela: this.props.mostrarPlano ?? true,
+      nomeCliente: this.props.nomeCliente ?? "Comercial Aurora Distribuidora Ltda.",
+      cnpjExibido: fase === "done" && cnpj.length >= 18 ? cnpj : "12.345.678/0001-90",
+      botaoLabel: fase === "loading" ? "Analisando…" : "Gerar Diagnóstico",
+      statusMsg: fase === "loading"
+        ? "Consultando Zen Fiscal e organizando competências…"
+        : fase === "done"
+          ? "Diagnóstico pronto — veja o relatório abaixo."
+          : "Demonstração visual: use qualquer CNPJ para ver o relatório de exemplo.",
+      onCnpj: e => this.setState({ cnpj: this.formatar(e.target.value) }),
+      onGerar: this.gerar
+    };
+  }
+}
+</script>
+</body>
+</html>
